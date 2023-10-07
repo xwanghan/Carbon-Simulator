@@ -212,8 +212,8 @@ class CarbonRedistribution(BaseComponent):
             assert world.planner.state["env_idx"] >= 0
 
             # layout the Carbon_project
-            world.maps.set("Carbon_project", np.zeros(world.world_size))
-            world.maps.set("Carbon_projectSourceBlock", np.zeros(world.world_size))
+            '''world.maps.set("Carbon_project", np.zeros(world.world_size))
+            world.maps.set("Carbon_projectSourceBlock", np.zeros(world.world_size))'''
             empty = world.maps.empty
             project_num = 0
             n_tries = 0
