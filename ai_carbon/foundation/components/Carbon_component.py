@@ -54,6 +54,8 @@ class Carbon_component(BaseComponent):
             labor_multiple=False,
             ability_independent=True,
 
+            evaluate=False,
+
             lowest_rate=0.1,
 
             random_fails=0.3,
@@ -89,6 +91,8 @@ class Carbon_component(BaseComponent):
 
         self.ability_independent = bool(ability_independent)
 
+        self.evaluate = bool(evaluate)
+
         self.lowest_rate = float(lowest_rate)
         assert 0 <= self.lowest_rate <= 1
 
@@ -112,6 +116,16 @@ class Carbon_component(BaseComponent):
             return False
         # If we made it here, the agent can build.
         return True
+
+    def agent_can_research(self, agent):
+        """Return True if agent can actually build in its current location."""
+        # Do nothing if this spot is already occupied by a landmark or resource
+        if self.world.location_resources(*agent.loc):
+            return False
+        if self.world.location_landmarks(*agent.loc):
+            return False
+        # If we made it here, the agent can build.
+        return agent.state["inventory"]["Coin"]>0
 
     # Required methods for implementing components
     # --------------------------------------------
@@ -278,7 +292,7 @@ class Carbon_component(BaseComponent):
                         "Research_ability"] if self.labor_multiple else self.labor
 
                     income = self.payment * agent.state["Manufacture_volume"]
-                    agent.state["inventory"]["Coin"] -= income/5
+                    agent.state["inventory"]["Coin"] -= income/(5* agent.state["Research_ability"])
 
                 else:
                     raise ValueError
@@ -316,7 +330,7 @@ class Carbon_component(BaseComponent):
         # Mobile agents' build action is masked if they cannot build with their
         # current location and/or endowment
         for agent in self.world.agents:
-            masks[agent.idx] = np.array([self.agent_can_build(agent), True])
+            masks[agent.idx] = np.array([self.agent_can_build(agent), self.agent_can_research(agent)])
 
         return masks
 
@@ -358,10 +372,29 @@ class Carbon_component(BaseComponent):
         world = self.world
 
         for agent in world.agents:
-
-            # 0.5 ~ PMSM, 0.1.0.0
-            agent.state["Research_ability"] = random.choice([1.0, 1.2, 1.4, 1.6])
-            agent.state["Manufacture_volume"] = random.choice([1.0, 1.2, 1.4, 1.6])
+            if self.evaluate:
+                assert self.n_agents == 5
+                if agent.idx == 0:
+                    agent.state["Research_ability"] = 1.2
+                    agent.state["Manufacture_volume"] = 1.6
+                elif agent.idx == 1:
+                    agent.state["Research_ability"] = 1.0
+                    agent.state["Manufacture_volume"] = 1.4
+                elif agent.idx == 2:
+                    agent.state["Research_ability"] = 1.2
+                    agent.state["Manufacture_volume"] = 1.2
+                elif agent.idx == 3:
+                    agent.state["Research_ability"] = 1.4
+                    agent.state["Manufacture_volume"] = 1.2
+                elif agent.idx == 4:
+                    agent.state["Research_ability"] = 1.6
+                    agent.state["Manufacture_volume"] = 1.0
+                else:
+                    raise ValueError(agent.idx)
+            else:
+                # 0.5 ~ PMSM, 0.1.0.0
+                agent.state["Research_ability"] = random.choice([1.0, 1.2, 1.4, 1.6])
+                agent.state["Manufacture_volume"] = random.choice([1.0, 1.2, 1.4, 1.6])
 
             # initiate the Carbon_emission_rate be 1.0.0.0
             agent.state["Carbon_emission_rate"] = 1.0
