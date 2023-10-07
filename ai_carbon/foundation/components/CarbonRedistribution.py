@@ -171,7 +171,7 @@ class CarbonRedistribution(BaseComponent):
 
             elif self.planner_mode == "inactive":
                 if self.predefined == "default":
-                    idx_action = [5, 5, 4, 3, 3]
+                    idx_action = [1, 1, 1, 1, 1]
                     total_percent = 10
                 elif self.predefined == "p1":
                     total_percents = [16, 16, 14, 12, 10, 10, 8, 6, 4, 4]
