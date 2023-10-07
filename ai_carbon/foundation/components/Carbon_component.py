@@ -291,8 +291,7 @@ class Carbon_component(BaseComponent):
                     agent.state["endogenous"]["Labor"] += self.labor * agent.state[
                         "Research_ability"] if self.labor_multiple else self.labor
 
-                    income = self.payment * agent.state["Manufacture_volume"]
-                    agent.state["inventory"]["Coin"] -= income/(5* agent.state["Research_ability"])
+                    agent.state["inventory"]["Coin"] -= self.payment/(2* agent.state["Research_ability"])
 
                 else:
                     raise ValueError
