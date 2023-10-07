@@ -277,7 +277,8 @@ class Carbon_component(BaseComponent):
                     agent.state["endogenous"]["Labor"] += self.labor * agent.state[
                         "Research_ability"] if self.labor_multiple else self.labor
 
-                    agent.state["inventory"]["Coin"] -= self.payment/2
+                    income = self.payment * agent.state["Manufacture_volume"]
+                    agent.state["inventory"]["Coin"] -= income/5
 
                 else:
                     raise ValueError
@@ -359,8 +360,8 @@ class Carbon_component(BaseComponent):
         for agent in world.agents:
 
             # 0.5 ~ PMSM, 0.1.0.0
-            agent.state["Research_ability"] = random.choice([0.6, 1.0, 1.4])
-            agent.state["Manufacture_volume"] = random.choice([0.6, 1.0, 1.4])
+            agent.state["Research_ability"] = random.choice([1.0, 1.2, 1.4, 1.6])
+            agent.state["Manufacture_volume"] = random.choice([1.0, 1.2, 1.4, 1.6])
 
             # initiate the Carbon_emission_rate be 1.0.0.0
             agent.state["Carbon_emission_rate"] = 1.0
