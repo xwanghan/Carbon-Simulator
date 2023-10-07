@@ -85,7 +85,7 @@ class Carbon_env(BaseEnvironment):
             energy_warmup_constant=10000,
             energy_warmup_method="auto",
 
-            mobile_coefficient=20,
+            mobile_coefficient=0.2,
 
             **base_env_kwargs
     ):
