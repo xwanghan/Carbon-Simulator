@@ -346,19 +346,32 @@ class Carbon_component(BaseComponent):
         """
         world = self.world
 
-        build_stats = {a.idx: {"n_builds": 0} for a in world.agents}
+        build_stats = {a.idx: {"n_builds": 0, "emission":0} for a in world.agents}
         for actions in self.Manufactures["builds"]:
             for action in actions:
                 idx = action["enterprise"]
                 build_stats[idx]["n_builds"] += 1
+                build_stats[idx]["emission"] += action["Carbon_emission"]
+
+        research_stats = {a.idx: {"n_research": 0} for a in world.agents}
+        for actions in self.Manufactures["research"]:
+            for action in actions:
+                idx = action["enterprise"]
+                research_stats[idx]["n_research"] += 1
 
         out_dict = {}
+        total_emission = 0
         for a in world.agents:
             for k, v in build_stats[a.idx].items():
+                out_dict["{}/{}".format(a.idx, k)] = v
+                if k == "Carbon_emission":
+                    total_emission += v
+            for k, v in research_stats[a.idx].items():
                 out_dict["{}/{}".format(a.idx, k)] = v
 
         num_Property = np.sum(world.maps.get("Property") > 0)
         out_dict["total_builds"] = num_Property
+        out_dict["total_emission"] = total_emission
 
         return out_dict
 
