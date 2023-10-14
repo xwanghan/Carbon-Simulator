@@ -8,7 +8,7 @@ import random
 
 import numpy as np
 
-from ai_carbon.foundation.base.registrar import Registry
+from Carbon_simulator.foundation.base.registrar import Registry
 
 
 class BaseAgent:

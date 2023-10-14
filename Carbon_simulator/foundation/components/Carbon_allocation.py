@@ -1,12 +1,6 @@
-# Copyright (c) 2020, salesforce.com, inc.
-# All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause
-# For full license text, see the LICENSE file in the repo root
-# or https://opensource.org/licenses/BSD-3-Clause
-
 import numpy as np
 
-from ai_carbon.foundation.base.base_component import (
+from Carbon_simulator.foundation.base.base_component import (
     BaseComponent,
     component_registry,
 )
@@ -14,11 +8,7 @@ from ai_carbon.foundation.base.base_component import (
 
 @component_registry.add
 class CarbonRedistribution(BaseComponent):
-    """Redistributes the total coin of the mobile agents as evenly as possible.
 
-    Note:
-        If this component is used, it should always be the last component in the order!
-    """
 
     name = "CarbonRedistribution"
     required_entities = ["Carbon_idx", "Carbon_project"]
@@ -87,11 +77,7 @@ class CarbonRedistribution(BaseComponent):
         raise NotImplementedError
 
     def component_step(self):
-        """
-        See base_component.py for detailed description.
 
-        Redistributes inventory coins so that all agents have equal coin endowment.
-        """
         world = self.world
         world.planner.state["year_num"] = self.world.timestep // self.period
 

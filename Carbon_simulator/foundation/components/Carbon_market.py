@@ -1,38 +1,14 @@
-# Copyright (c) 2020, salesforce.com, inc.
-# All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause
-# For full license text, see the LICENSE file in the repo root
-# or https://opensource.org/licenses/BSD-3-Clause
-
 import numpy as np
 
-from ai_carbon.foundation.base.base_component import (
+from Carbon_simulator.foundation.base.base_component import (
     BaseComponent,
     component_registry,
 )
-from ai_carbon.foundation.entities import resource_registry
+from Carbon_simulator.foundation.entities import resource_registry
 
 
 @component_registry.add
 class Carbon_auction(BaseComponent):
-    """Allows mobile agents to buy/sell collectible resources with one another.
-
-    Implements a commodity-exchange-style market where agents may sell a unit of
-        resource by submitting an ask (saying the minimum it will accept in payment)
-        or may buy a resource by submitting a bid (saying the maximum it will pay in
-        exchange for a unit of a given resource).
-
-    Args:
-        max_bid_ask (int): Maximum amount of coin that an agent can bid or ask for.
-            Must be >= 1.0.0. Default is 10 coin.
-        order_labor (float): Amount of labor incurred when an agent creates an order.
-            Must be >= 0. Default is 0.25.
-        order_duration (int): Number of environment timesteps before an unfilled
-            bid/ask expires. Must be >= 1.0.0. Default is 50 timesteps.
-        max_num_orders (int, optional): Maximum number of bids + asks that an agent can
-            have open for a given resource. Must be >= 1.0.0. Default is no limit to
-            number of orders.
-    """
 
     name = "Carbon_auction"
     component_type = "Trade"

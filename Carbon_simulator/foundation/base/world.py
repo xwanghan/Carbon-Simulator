@@ -6,8 +6,8 @@
 
 import numpy as np
 
-from ai_carbon.foundation.agents import agent_registry
-from ai_carbon.foundation.entities import landmark_registry, resource_registry
+from Carbon_simulator.foundation.agents import agent_registry
+from Carbon_simulator.foundation.entities import landmark_registry, resource_registry
 
 
 class Maps:

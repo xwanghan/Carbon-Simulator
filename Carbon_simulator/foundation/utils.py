@@ -1,9 +1,3 @@
-# Copyright (c) 2020, salesforce.com, inc.
-# All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause
-# For full license text, see the LICENSE file in the repo root
-# or https://opensource.org/licenses/BSD-3-Clause
-
 import json
 import os
 import sys
@@ -12,7 +6,7 @@ from hashlib import sha512
 import lz4.frame
 from Crypto.PublicKey import RSA
 
-from ai_carbon.foundation.base.base_env import BaseEnvironment
+from Carbon_simulator.foundation.base.base_env import BaseEnvironment
 
 
 def save_episode_log(game_object, filepath, compression_level=16):

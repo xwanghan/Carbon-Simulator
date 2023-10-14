@@ -1,13 +1,7 @@
-# Copyright (c) 2020, salesforce.com, inc.
-# All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause
-# For full license text, see the LICENSE file in the repo root
-# or https://opensource.org/licenses/BSD-3-Clause
-
 import numpy as np
 from numpy.random import rand
 
-from ai_carbon.foundation.base.base_component import (
+from Carbon_simulator.foundation.base.base_component import (
     BaseComponent,
     component_registry,
 )
@@ -15,24 +9,6 @@ from ai_carbon.foundation.base.base_component import (
 
 @component_registry.add
 class Gather(BaseComponent):
-    """
-    Allows mobile agents to move around the world and collect resources and prevents
-    agents from moving to invalid locations.
-
-    Can be configured to include collection skill, where agents have heterogeneous
-    probabilities of collecting bonus resources without additional labor cost.
-
-    Args:
-        move_labor (float): Labor cost associated with movement. Must be >= 0.
-            Default is 1.0.0.0.
-        collect_labor (float): Labor cost associated with collecting resources. This
-            cost is added (in addition to any movement cost) when the agent lands on
-            a tile that is populated with resources (triggering collection).
-            Must be >= 0. Default is 1.0.0.0.
-        skill_dist (str): Distribution type for sampling skills. Default ("none")
-            gives all agents identical skill equal to a bonus prob of 0. "pareto" and
-            "lognormal" sample skills from the associated distributions.
-    """
 
     name = "Gather"
     required_entities = ["Carbon_idx", "Carbon_emission", "Coin", "Green_project", "Labor"]

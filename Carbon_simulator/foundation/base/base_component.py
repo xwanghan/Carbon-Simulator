@@ -8,9 +8,9 @@ from abc import ABC, abstractmethod
 
 import numpy as np
 
-from ai_carbon.foundation.agents import agent_registry
-from ai_carbon.foundation.base.registrar import Registry
-from ai_carbon.foundation.base.world import World
+from Carbon_simulator.foundation.agents import agent_registry
+from Carbon_simulator.foundation.base.registrar import Registry
+from Carbon_simulator.foundation.base.world import World
 
 
 class BaseComponent(ABC):

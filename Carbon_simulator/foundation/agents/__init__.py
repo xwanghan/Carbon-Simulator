@@ -4,7 +4,7 @@
 # For full license text, see the LICENSE file in the repo root
 # or https://opensource.org/licenses/BSD-3-Clause
 
-from ai_carbon.foundation.base.base_agent import agent_registry
+from Carbon_simulator.foundation.base.base_agent import agent_registry
 
 from . import mobiles, planners
 

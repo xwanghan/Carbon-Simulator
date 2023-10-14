@@ -10,11 +10,11 @@ from copy import deepcopy
 
 import numpy as np
 
-from ai_carbon.foundation.agents import agent_registry
-from ai_carbon.foundation.base.registrar import Registry
-from ai_carbon.foundation.base.world import World
-from ai_carbon.foundation.components import component_registry
-from ai_carbon.foundation.entities import (
+from Carbon_simulator.foundation.agents import agent_registry
+from Carbon_simulator.foundation.base.registrar import Registry
+from Carbon_simulator.foundation.base.world import World
+from Carbon_simulator.foundation.components import component_registry
+from Carbon_simulator.foundation.entities import (
     endogenous_registry,
     landmark_registry,
     resource_registry,
