@@ -7,10 +7,10 @@
 from ai_carbon.foundation.base.base_component import component_registry
 
 from . import (
-    Carbon_component,
-    Carbon_auction,
-    Gather,
-    CarbonRedistribution,
+    Produce_and_Invest,
+    Carbon_market,
+    Move_and_Government_project,
+    Carbon_allocation,
 )
 
 # Import files that add Component class(es) to component_registry

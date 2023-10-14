@@ -34,7 +34,6 @@ class CarbonRedistribution(BaseComponent):
             *base_component_args,
             planner_mode="inactive",
             fixed_punishment=100,
-            tech_share_year=False,
             total_idx=200,
             max_year_percent=100,
 
@@ -57,8 +56,6 @@ class CarbonRedistribution(BaseComponent):
 
         self.max_year_percent = int(max_year_percent)
         assert 0 <= self.max_year_percent <= 100
-
-        self.tech_share_year = bool(tech_share_year)
 
         self.predefined = str(predefined)
 
@@ -112,13 +109,6 @@ class CarbonRedistribution(BaseComponent):
             world.planner.state["average_Er"] = sum_Er / world.n_agents
             assert 0 <= world.planner.state["average_Er"] <= 1
 
-            if self.tech_share_year:
-                for agent in world.agents:
-                    agent.state["Start_Er"] = min(world.planner.state["average_Er"],
-                                                  agent.state["Carbon_emission_rate"])
-                    assert 0 <= agent.state["Start_Er"] <= 1
-                    agent.state["Research_count"][1] = 0
-
             self.log.append({
                 "settlement_idx": self.world.planner.state["settlement_idx"],
             })
@@ -170,21 +160,21 @@ class CarbonRedistribution(BaseComponent):
                     agent.state["escrow"]["Carbon_idx"] = 0
 
             elif self.planner_mode == "inactive":
-                if self.predefined == "default":
+                if self.predefined == "flat":
                     idx_action = [1, 1, 1, 1, 1]
                     total_percent = 10
-                elif self.predefined == "p1":
+                elif self.predefined == "decreasing":
                     total_percents = [16, 16, 14, 12, 10, 10, 8, 6, 4, 4]
                     assert sum(total_percents) == 100, sum(total_percents)
                     idx_action = [5, 5, 4, 3, 3]
                     total_percent = total_percents[world.timestep // self.period]
-                elif self.predefined == "p2":
+                elif self.predefined == "convex":
                     total_percents = [6, 8, 10, 12, 14, 14, 12, 10, 8, 6]
                     assert sum(total_percents) == 100, sum(total_percents)
                     idx_action = [5, 5, 4, 3, 3]
                     total_percent = total_percents[world.timestep // self.period]
                 else:
-                    assert "predefined not in (default, p1)"
+                    assert "predefined not in (flat, decreasing, convex)"
                 # Divide the Carbon-idx to agents
 
 
