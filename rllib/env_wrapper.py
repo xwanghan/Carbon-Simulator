@@ -1,14 +1,3 @@
-# Copyright (c) 2021, salesforce.com, inc.
-# All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause
-# For full license text, see the LICENSE file in the repo root
-# or https://opensource.org/licenses/BSD-3-Clause
-
-"""
-Wrapper for making the gather-trade-build environment an OpenAI compatible environment.
-This can then be used with reinforcement learning frameworks such as RLlib.
-"""
-
 import os
 import pickle
 import random
