@@ -1,4 +1,4 @@
-# Carbon-Market-Simulation-with-Adaptive-Economic-Design
+# Carbon Market Simulation with Adaptive Economic Design
 
 ![Simulator Structure](Structure.png)
 
