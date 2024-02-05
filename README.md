@@ -1,8 +1,6 @@
 # Carbon-Market-Simulation-with-Adaptive-Economic-Design
 
-<div style="background-color: white; display: inline-block; padding: 10px;">
-  ![Simulator Strcuture](Structure.png)
-</div>
+![Simulator Structure](Structure.png)
 
 TO RUN EXAMPLE
 ```
