@@ -1,6 +1,6 @@
 # Carbon-Market-Simulation-with-Adaptive-Economic-Design
 
-![Simulator Strcuture](Strcuture.png)
+![Simulator Strcuture](Structure.png)
 
 TO RUN EXAMPLE
 ```
