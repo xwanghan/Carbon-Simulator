@@ -220,7 +220,7 @@ def maybe_save(trainer_obj, result_dict, ckpt_freq, ckpt_directory, trainer_step
 
         if ckpt_freq > 0:
             if training_iteration - trainer_step_last_ckpt >= ckpt_freq:
-                saving.save_snapshot(trainer_obj, ckpt_directory, suffix="")
+                # saving.save_snapshot(trainer_obj, ckpt_directory, suffix="")
                 saving.save_model_weights(
                     trainer_obj, ckpt_directory, training_iteration, suffix="agent"
                 )
@@ -327,7 +327,7 @@ if __name__ == "__main__":
 
     # Finish up
     logger.info("Completing! Saving final snapshot...\n\n")
-    saving.save_snapshot(trainer, ckpt_dir)
+    # saving.save_snapshot(trainer, ckpt_dir)
     saving.save_model_weights(trainer, ckpt_dir, global_step, suffix="agent")
     saving.save_model_weights(trainer, ckpt_dir, global_step, suffix="planner")
     logger.info("Final snapshot saved! All done.")

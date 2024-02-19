@@ -233,6 +233,7 @@ class Carbon_component(BaseComponent):
                         agent.state["endogenous"]["Labor"] += self.labor * agent.state[
                             "Manufacture_volume"] if self.labor_multiple else self.labor
                         agent.state["endogenous"]["Carbon_emission"] += Carbon_emission
+                        agent.state["Last_emission"] += Carbon_emission
 
                         builds.append(
                             {
@@ -338,7 +339,7 @@ class Carbon_component(BaseComponent):
         for a in world.agents:
             for k, v in build_stats[a.idx].items():
                 out_dict["{}/{}".format(a.idx, k)] = v
-                if k == "Carbon_emission":
+                if k == "emission":
                     total_emission += v
             for k, v in research_stats[a.idx].items():
                 out_dict["{}/{}".format(a.idx, k)] = v
@@ -386,6 +387,8 @@ class Carbon_component(BaseComponent):
             agent.state["Carbon_emission_rate"] = 1.0
 
             agent.state["Start_Er"] = 1.0
+
+            agent.state["Last_emission"] = 0
 
             # initiate the [total research count, this year research count] be [0, 0]
             agent.state["Research_count"] = [0, 0]

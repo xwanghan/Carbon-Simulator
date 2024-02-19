@@ -27,7 +27,8 @@ class CarbonRedistribution(BaseComponent):
             total_idx=200,
             max_year_percent=100,
 
-            predefined = None,
+            years_predefined = None,
+            agents_predefined = None,
 
             **base_component_kwargs
     ):
@@ -47,7 +48,8 @@ class CarbonRedistribution(BaseComponent):
         self.max_year_percent = int(max_year_percent)
         assert 0 <= self.max_year_percent <= 100
 
-        self.predefined = str(predefined)
+        self.years_predefined = str(years_predefined)
+        self.agents_predefined = str(agents_predefined)
 
         self.log = []
 
@@ -146,21 +148,35 @@ class CarbonRedistribution(BaseComponent):
                     agent.state["escrow"]["Carbon_idx"] = 0
 
             elif self.planner_mode == "inactive":
-                if self.predefined == "flat":
-                    idx_action = [1, 1, 1, 1, 1]
+                if self.years_predefined == "flat":
+                    if self.agents_predefined != "None":
+                        idx_action = [7, 6, 5, 4, 3]
+                    else:
+                        idx_action = [1, 1, 1, 1, 1]
                     total_percent = 10
-                elif self.predefined == "decreasing":
+                elif self.years_predefined == "decreasing":
                     total_percents = [16, 16, 14, 12, 10, 10, 8, 6, 4, 4]
                     assert sum(total_percents) == 100, sum(total_percents)
-                    idx_action = [5, 5, 4, 3, 3]
+                    if self.agents_predefined != "None":
+                        idx_action = [7, 6, 5, 4, 3]
+                    else:
+                        idx_action = [5, 5, 4, 3, 3]
                     total_percent = total_percents[world.timestep // self.period]
-                elif self.predefined == "convex":
+                elif self.years_predefined == "convex":
                     total_percents = [6, 8, 10, 12, 14, 14, 12, 10, 8, 6]
                     assert sum(total_percents) == 100, sum(total_percents)
-                    idx_action = [5, 5, 4, 3, 3]
+                    if self.agents_predefined != "None":
+                        idx_action = [7, 6, 5, 4, 3]
+                    else:
+                        idx_action = [5, 5, 4, 3, 3]
+                    total_percent = total_percents[world.timestep // self.period]
+                elif self.years_predefined is None:
+                    total_percents = [6, 8, 10, 12, 14, 14, 12, 10, 8, 6]
+                    assert sum(total_percents) == 100, sum(total_percents)
+                    idx_action = [7, 6, 5, 4, 3]
                     total_percent = total_percents[world.timestep // self.period]
                 else:
-                    assert "predefined not in (flat, decreasing, convex)"
+                    assert "predefined not in (flat, decreasing, convex or None)"
                 # Divide the Carbon-idx to agents
 
 
@@ -173,10 +189,19 @@ class CarbonRedistribution(BaseComponent):
                     else:
                         world.planner.state["mobile_idx"][i] = int(year_idx * 9 / 10 / self.n_agents)
 
-                sorted_V = sorted(world.agents, key=lambda agent_V: agent_V.state["Manufacture_volume"], reverse=True)
+                if self.agents_predefined == "grandfathering_ml":
+                    sorted_V = sorted(world.agents, key=lambda agent_V: agent_V.state["Manufacture_volume"]/agent_V.state["Carbon_emission_rate"], reverse=True)
+                elif self.agents_predefined == "grandfathering_e":
+                    sorted_V = sorted(world.agents, key=lambda agent_V: agent_V.state["Last_emission"], reverse=True)
+                elif self.agents_predefined == "None":
+                    sorted_V = sorted(world.agents, key=lambda agent_V: agent_V.state["Manufacture_volume"], reverse=True)
+                else:
+                    assert "predefined not in (grandfathering_m*l, grandfathering_m_l, grandfathering_e or None)"
+
                 for agent_idx in range(self.n_agents):
                     sorted_V[agent_idx].state["inventory"]["Carbon_idx"] = world.planner.state["mobile_idx"][agent_idx]
                     sorted_V[agent_idx].state["escrow"]["Carbon_idx"] = 0
+                    sorted_V[agent_idx].state["Last_emission"] = 0
 
             else:
                 assert self.planner_mode in ["inactive", "active"]
@@ -222,6 +247,16 @@ class CarbonRedistribution(BaseComponent):
                 "year_num": self.world.planner.state["year_num"],
                 "average_Er": self.world.planner.state["average_Er"],
             }
+        '''
+        obs_dict[self.world.planner.idx] = {
+            "punishment": self.world.planner.state["punishment"],
+            "year_num": self.world.planner.state["year_num"],
+            "env_idx": self.world.planner.state["env_idx"],
+            "mobile_idx": self.world.planner.state["mobile_idx"],
+            "agents_volume": [agent.state["Manufacture_volume"] for agent in self.world.agents],
+            "settlement_idx": self.world.planner.state["settlement_idx"],
+        }
+        '''
         obs_dict[self.world.planner.idx] = {
             "punishment": self.world.planner.state["punishment"],
             "year_num": self.world.planner.state["year_num"],
@@ -234,6 +269,7 @@ class CarbonRedistribution(BaseComponent):
             "remained_idx": self.world.planner.state["remained_idx"],
             "average_Er": self.world.planner.state["average_Er"],
         }
+
         return obs_dict
 
     def generate_masks(self, completions=0):

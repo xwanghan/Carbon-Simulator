@@ -48,7 +48,7 @@ def planner_strategy(coin_endowments, mobile_idx, remained_idx, mobile_coefficie
     idx_used_mobile = np.exp(sum([-1 * mobile_coefficient * idx for idx in mobile_idx]))
     idx_used_planner = -10000 * int(remained_idx < 0)
 
-    util = equality * prod + idx_used_mobile + idx_used_planner
+    util = equality * prod * idx_used_mobile + idx_used_planner
     return util
 
 
@@ -88,10 +88,10 @@ def planner_metrics(coin_endowments, mobile_idx, remained_idx, mobile_coefficien
     prod = get_productivity(coin_endowments) / n_agents
     equality = get_equality(coin_endowments)
 
-    idx_used_mobile = sum([-1 * mobile_coefficient * idx for idx in mobile_idx])
+    idx_used_mobile = np.exp(sum([-1 * mobile_coefficient * idx for idx in mobile_idx]))
     idx_used_planner = -10000 * int(remained_idx < 0)
 
-    util = equality * prod + idx_used_mobile + idx_used_planner
+    util = equality * prod * idx_used_mobile + idx_used_planner
 
     planner_metrix = {
         "util": util,
