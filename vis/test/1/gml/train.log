@@ -1,0 +1,2223 @@
+seed (final): 35366000
+Not restoring trainer...
+Restoring agents weights...
+Starting with fresh planner weights.
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.08827447891235352
+    StateBufferConnector_ms: 0.008851289749145508
+    ViewRequirementAgentConnector_ms: 0.19960403442382812
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2732.3725321418715
+  episode_reward_mean: 2511.349943136233
+  episode_reward_min: 2290.3273541305944
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2732.3725321418715
+    - 2290.3273541305944
+    policy_a_reward: [348.83673560521936, 228.8590213499665, 246.0340160195021, 359.6574314952948,
+      439.08678697415667, 272.0251425604685, 291.61858298689305, 365.1187496049778,
+      57.432823194824785, 505.1400983999209]
+    policy_p_reward:
+    - 1109.8985406977326
+    - 798.9919573835043
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 505.1400983999209
+    p: 1109.8985406977326
+  policy_reward_mean:
+    a: 311.38093881912243
+    p: 954.4452490406185
+  policy_reward_min:
+    a: 57.432823194824785
+    p: 798.9919573835043
+  sampler_perf:
+    mean_action_processing_ms: 0.5239312520284138
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 8.385308012515008
+    mean_inference_ms: 7.162278283855872
+    mean_raw_obs_processing_ms: 2.138577059595409
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.08827447891235352
+      StateBufferConnector_ms: 0.008851289749145508
+      ViewRequirementAgentConnector_ms: 0.19960403442382812
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2732.3725321418715
+    episode_reward_mean: 2511.349943136233
+    episode_reward_min: 2290.3273541305944
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2732.3725321418715
+      - 2290.3273541305944
+      policy_a_reward: [348.83673560521936, 228.8590213499665, 246.0340160195021,
+        359.6574314952948, 439.08678697415667, 272.0251425604685, 291.61858298689305,
+        365.1187496049778, 57.432823194824785, 505.1400983999209]
+      policy_p_reward:
+      - 1109.8985406977326
+      - 798.9919573835043
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 505.1400983999209
+      p: 1109.8985406977326
+    policy_reward_mean:
+      a: 311.38093881912243
+      p: 954.4452490406185
+    policy_reward_min:
+      a: 57.432823194824785
+      p: 798.9919573835043
+    sampler_perf:
+      mean_action_processing_ms: 0.5239312520284138
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 8.385308012515008
+      mean_inference_ms: 7.162278283855872
+      mean_raw_obs_processing_ms: 2.138577059595409
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_00
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.10709166526794434
+    StateBufferConnector_ms: 0.008970499038696289
+    ViewRequirementAgentConnector_ms: 0.20932555198669434
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 4034.1479341760123
+  episode_reward_mean: 3618.456338893805
+  episode_reward_min: 3202.764743611598
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 3202.764743611598
+    - 4034.1479341760123
+    policy_a_reward: [467.45543599017293, 498.0516737592898, 227.4619848054792, 353.3485625726195,
+      324.6633897683226, 476.97992664214473, 321.35453447686797, 445.3645403069293,
+      441.74836407065897, 512.1194765103838]
+    policy_p_reward:
+    - 1331.7836967157182
+    - 1836.5810921690181
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 512.1194765103838
+    p: 1836.5810921690181
+  policy_reward_mean:
+    a: 406.85478889028684
+    p: 1584.1823944423681
+  policy_reward_min:
+    a: 227.4619848054792
+    p: 1331.7836967157182
+  sampler_perf:
+    mean_action_processing_ms: 0.5320295110925451
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 6.35258825151594
+    mean_inference_ms: 7.852433563826921
+    mean_raw_obs_processing_ms: 2.149312050787957
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.10709166526794434
+      StateBufferConnector_ms: 0.008970499038696289
+      ViewRequirementAgentConnector_ms: 0.20932555198669434
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 4034.1479341760123
+    episode_reward_mean: 3618.456338893805
+    episode_reward_min: 3202.764743611598
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 3202.764743611598
+      - 4034.1479341760123
+      policy_a_reward: [467.45543599017293, 498.0516737592898, 227.4619848054792,
+        353.3485625726195, 324.6633897683226, 476.97992664214473, 321.35453447686797,
+        445.3645403069293, 441.74836407065897, 512.1194765103838]
+      policy_p_reward:
+      - 1331.7836967157182
+      - 1836.5810921690181
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 512.1194765103838
+      p: 1836.5810921690181
+    policy_reward_mean:
+      a: 406.85478889028684
+      p: 1584.1823944423681
+    policy_reward_min:
+      a: 227.4619848054792
+      p: 1331.7836967157182
+    sampler_perf:
+      mean_action_processing_ms: 0.5320295110925451
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 6.35258825151594
+      mean_inference_ms: 7.852433563826921
+      mean_raw_obs_processing_ms: 2.149312050787957
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_01
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.1160740852355957
+    StateBufferConnector_ms: 0.009238719940185547
+    ViewRequirementAgentConnector_ms: 0.195997953414917
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 3408.5588736046197
+  episode_reward_mean: 2890.101559677858
+  episode_reward_min: 2371.6442457510957
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 3408.5588736046197
+    - 2371.6442457510957
+    policy_a_reward: [336.3681001470233, 357.2003529630411, 506.9472020851957, 494.2873129007715,
+      255.08094045774544, 187.69425693386944, 241.71079540724588, 242.74988639593627,
+      316.72748691030824, 439.0135924944006]
+    policy_p_reward:
+    - 1458.674965050853
+    - 943.7482276093413
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 506.9472020851957
+    p: 1458.674965050853
+  policy_reward_mean:
+    a: 337.7779926695538
+    p: 1201.211596330097
+  policy_reward_min:
+    a: 187.69425693386944
+    p: 943.7482276093413
+  sampler_perf:
+    mean_action_processing_ms: 0.5295942180717412
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 5.645407270702181
+    mean_inference_ms: 8.106767297347016
+    mean_raw_obs_processing_ms: 2.1064583259292795
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.1160740852355957
+      StateBufferConnector_ms: 0.009238719940185547
+      ViewRequirementAgentConnector_ms: 0.195997953414917
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 3408.5588736046197
+    episode_reward_mean: 2890.101559677858
+    episode_reward_min: 2371.6442457510957
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 3408.5588736046197
+      - 2371.6442457510957
+      policy_a_reward: [336.3681001470233, 357.2003529630411, 506.9472020851957, 494.2873129007715,
+        255.08094045774544, 187.69425693386944, 241.71079540724588, 242.74988639593627,
+        316.72748691030824, 439.0135924944006]
+      policy_p_reward:
+      - 1458.674965050853
+      - 943.7482276093413
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 506.9472020851957
+      p: 1458.674965050853
+    policy_reward_mean:
+      a: 337.7779926695538
+      p: 1201.211596330097
+    policy_reward_min:
+      a: 187.69425693386944
+      p: 943.7482276093413
+    sampler_perf:
+      mean_action_processing_ms: 0.5295942180717412
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 5.645407270702181
+      mean_inference_ms: 8.106767297347016
+      mean_raw_obs_processing_ms: 2.1064583259292795
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_02
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09883642196655273
+    StateBufferConnector_ms: 0.008535385131835938
+    ViewRequirementAgentConnector_ms: 0.2083301544189453
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 3944.578309131214
+  episode_reward_mean: 3376.899335489355
+  episode_reward_min: 2809.220361847496
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 3944.578309131214
+    - 2809.220361847496
+    policy_a_reward: [439.6137016542993, 426.7883359557773, 453.5169315006767, 365.83040033911794,
+      384.7893582887736, 324.07929101557045, 448.22435939248504, 181.75476988523587,
+      337.1219825748895, 324.8316187776001]
+    policy_p_reward:
+    - 1874.039581392569
+    - 1193.208340201707
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 453.5169315006767
+    p: 1874.039581392569
+  policy_reward_mean:
+    a: 368.6550749384425
+    p: 1533.623960797138
+  policy_reward_min:
+    a: 181.75476988523587
+    p: 1193.208340201707
+  sampler_perf:
+    mean_action_processing_ms: 0.5318370239547585
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 5.2038645041340414
+    mean_inference_ms: 8.277749848449188
+    mean_raw_obs_processing_ms: 2.0785585514966516
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09883642196655273
+      StateBufferConnector_ms: 0.008535385131835938
+      ViewRequirementAgentConnector_ms: 0.2083301544189453
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 3944.578309131214
+    episode_reward_mean: 3376.899335489355
+    episode_reward_min: 2809.220361847496
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 3944.578309131214
+      - 2809.220361847496
+      policy_a_reward: [439.6137016542993, 426.7883359557773, 453.5169315006767, 365.83040033911794,
+        384.7893582887736, 324.07929101557045, 448.22435939248504, 181.75476988523587,
+        337.1219825748895, 324.8316187776001]
+      policy_p_reward:
+      - 1874.039581392569
+      - 1193.208340201707
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 453.5169315006767
+      p: 1874.039581392569
+    policy_reward_mean:
+      a: 368.6550749384425
+      p: 1533.623960797138
+    policy_reward_min:
+      a: 181.75476988523587
+      p: 1193.208340201707
+    sampler_perf:
+      mean_action_processing_ms: 0.5318370239547585
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 5.2038645041340414
+      mean_inference_ms: 8.277749848449188
+      mean_raw_obs_processing_ms: 2.0785585514966516
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_03
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.10232925415039062
+    StateBufferConnector_ms: 0.009191036224365234
+    ViewRequirementAgentConnector_ms: 0.199127197265625
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 3085.118649028531
+  episode_reward_mean: 3015.453579545212
+  episode_reward_min: 2945.7885100618932
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2945.7885100618932
+    - 3085.118649028531
+    policy_a_reward: [224.95464462154854, 246.99612095984241, 468.09398081944306,
+      330.0157681255261, 431.3953308232529, 461.8751710970449, 452.4326873960717,
+      251.69739579442705, 329.9048617507381, 258.1112236780946]
+    policy_p_reward:
+    - 1244.3326647122733
+    - 1331.0973093121595
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 468.09398081944306
+    p: 1331.0973093121595
+  policy_reward_mean:
+    a: 345.5477185065989
+    p: 1287.7149870122164
+  policy_reward_min:
+    a: 224.95464462154854
+    p: 1244.3326647122733
+  sampler_perf:
+    mean_action_processing_ms: 0.6121246874785242
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.9055873370561445
+    mean_inference_ms: 8.480141802531916
+    mean_raw_obs_processing_ms: 2.05756940159117
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.10232925415039062
+      StateBufferConnector_ms: 0.009191036224365234
+      ViewRequirementAgentConnector_ms: 0.199127197265625
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 3085.118649028531
+    episode_reward_mean: 3015.453579545212
+    episode_reward_min: 2945.7885100618932
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2945.7885100618932
+      - 3085.118649028531
+      policy_a_reward: [224.95464462154854, 246.99612095984241, 468.09398081944306,
+        330.0157681255261, 431.3953308232529, 461.8751710970449, 452.4326873960717,
+        251.69739579442705, 329.9048617507381, 258.1112236780946]
+      policy_p_reward:
+      - 1244.3326647122733
+      - 1331.0973093121595
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 468.09398081944306
+      p: 1331.0973093121595
+    policy_reward_mean:
+      a: 345.5477185065989
+      p: 1287.7149870122164
+    policy_reward_min:
+      a: 224.95464462154854
+      p: 1244.3326647122733
+    sampler_perf:
+      mean_action_processing_ms: 0.6121246874785242
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.9055873370561445
+      mean_inference_ms: 8.480141802531916
+      mean_raw_obs_processing_ms: 2.05756940159117
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_04
+Completing! Saving final snapshot...
+
+
+Final snapshot saved! All done.
+seed (final): 37331000
+Not restoring trainer...
+Restoring agents weights...
+Starting with fresh planner weights.
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.08139610290527344
+    StateBufferConnector_ms: 0.008243322372436523
+    ViewRequirementAgentConnector_ms: 0.18780827522277832
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2720.560457256068
+  episode_reward_mean: 2439.3747890674904
+  episode_reward_min: 2158.1891208789134
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2158.1891208789134
+    - 2720.560457256068
+    policy_a_reward: [288.47857550291184, 285.6422220018083, 351.12126868370376, 316.6265088716707,
+      266.1882628729584, 504.8456130072239, 228.33499935259044, 383.50354527355, 525.2745393710035,
+      473.673069471907]
+    policy_p_reward:
+    - 650.1322829458494
+    - 604.9286907797936
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 525.2745393710035
+    p: 650.1322829458494
+  policy_reward_mean:
+    a: 362.36886044093274
+    p: 627.5304868628215
+  policy_reward_min:
+    a: 228.33499935259044
+    p: 604.9286907797936
+  sampler_perf:
+    mean_action_processing_ms: 0.5219491893897751
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.960239197203737
+    mean_inference_ms: 7.253223788476514
+    mean_raw_obs_processing_ms: 2.02651366502225
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.08139610290527344
+      StateBufferConnector_ms: 0.008243322372436523
+      ViewRequirementAgentConnector_ms: 0.18780827522277832
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2720.560457256068
+    episode_reward_mean: 2439.3747890674904
+    episode_reward_min: 2158.1891208789134
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2158.1891208789134
+      - 2720.560457256068
+      policy_a_reward: [288.47857550291184, 285.6422220018083, 351.12126868370376,
+        316.6265088716707, 266.1882628729584, 504.8456130072239, 228.33499935259044,
+        383.50354527355, 525.2745393710035, 473.673069471907]
+      policy_p_reward:
+      - 650.1322829458494
+      - 604.9286907797936
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 525.2745393710035
+      p: 650.1322829458494
+    policy_reward_mean:
+      a: 362.36886044093274
+      p: 627.5304868628215
+    policy_reward_min:
+      a: 228.33499935259044
+      p: 604.9286907797936
+    sampler_perf:
+      mean_action_processing_ms: 0.5219491893897751
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.960239197203737
+      mean_inference_ms: 7.253223788476514
+      mean_raw_obs_processing_ms: 2.02651366502225
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_00
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.08897185325622559
+    StateBufferConnector_ms: 0.008183717727661133
+    ViewRequirementAgentConnector_ms: 0.18135905265808105
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2376.102844175317
+  episode_reward_mean: 2351.294978546968
+  episode_reward_min: 2326.4871129186195
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2326.4871129186195
+    - 2376.102844175317
+    policy_a_reward: [245.5945069419284, 513.4740681059477, 440.19267212093615, 224.70003497906094,
+      198.4447429158002, 364.6583095737055, 319.9430755149411, 285.7924920991752,
+      509.0042551900703, 330.32001524707977]
+    policy_p_reward:
+    - 704.0810878549473
+    - 566.3846965503402
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 513.4740681059477
+    p: 704.0810878549473
+  policy_reward_mean:
+    a: 343.2124172688645
+    p: 635.2328922026438
+  policy_reward_min:
+    a: 198.4447429158002
+    p: 566.3846965503402
+  sampler_perf:
+    mean_action_processing_ms: 0.5336772430907716
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.066755959799478
+    mean_inference_ms: 7.450227375392552
+    mean_raw_obs_processing_ms: 2.014314258967961
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.08897185325622559
+      StateBufferConnector_ms: 0.008183717727661133
+      ViewRequirementAgentConnector_ms: 0.18135905265808105
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2376.102844175317
+    episode_reward_mean: 2351.294978546968
+    episode_reward_min: 2326.4871129186195
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2326.4871129186195
+      - 2376.102844175317
+      policy_a_reward: [245.5945069419284, 513.4740681059477, 440.19267212093615,
+        224.70003497906094, 198.4447429158002, 364.6583095737055, 319.9430755149411,
+        285.7924920991752, 509.0042551900703, 330.32001524707977]
+      policy_p_reward:
+      - 704.0810878549473
+      - 566.3846965503402
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 513.4740681059477
+      p: 704.0810878549473
+    policy_reward_mean:
+      a: 343.2124172688645
+      p: 635.2328922026438
+    policy_reward_min:
+      a: 198.4447429158002
+      p: 566.3846965503402
+    sampler_perf:
+      mean_action_processing_ms: 0.5336772430907716
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.066755959799478
+      mean_inference_ms: 7.450227375392552
+      mean_raw_obs_processing_ms: 2.014314258967961
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_01
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09769797325134277
+    StateBufferConnector_ms: 0.008338689804077148
+    ViewRequirementAgentConnector_ms: 0.19156336784362793
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2688.9237752416007
+  episode_reward_mean: 2558.962107306711
+  episode_reward_min: 2429.000439371821
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2429.000439371821
+    - 2688.9237752416007
+    policy_a_reward: [326.3309995528681, 319.6407233519836, 512.5213769263789, 256.4754418345292,
+      385.34837697380107, 233.6271245659477, 417.8469626377044, 419.20411822063426,
+      442.25549236593446, 514.4027587167067]
+    policy_p_reward:
+    - 628.6835207322648
+    - 661.5873187346666
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 514.4027587167067
+    p: 661.5873187346666
+  policy_reward_mean:
+    a: 382.7653375146489
+    p: 645.1354197334657
+  policy_reward_min:
+    a: 233.6271245659477
+    p: 628.6835207322648
+  sampler_perf:
+    mean_action_processing_ms: 0.5207469985931417
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.040565433540318
+    mean_inference_ms: 7.862461637767611
+    mean_raw_obs_processing_ms: 1.9796070935009797
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09769797325134277
+      StateBufferConnector_ms: 0.008338689804077148
+      ViewRequirementAgentConnector_ms: 0.19156336784362793
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2688.9237752416007
+    episode_reward_mean: 2558.962107306711
+    episode_reward_min: 2429.000439371821
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2429.000439371821
+      - 2688.9237752416007
+      policy_a_reward: [326.3309995528681, 319.6407233519836, 512.5213769263789, 256.4754418345292,
+        385.34837697380107, 233.6271245659477, 417.8469626377044, 419.20411822063426,
+        442.25549236593446, 514.4027587167067]
+      policy_p_reward:
+      - 628.6835207322648
+      - 661.5873187346666
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 514.4027587167067
+      p: 661.5873187346666
+    policy_reward_mean:
+      a: 382.7653375146489
+      p: 645.1354197334657
+    policy_reward_min:
+      a: 233.6271245659477
+      p: 628.6835207322648
+    sampler_perf:
+      mean_action_processing_ms: 0.5207469985931417
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.040565433540318
+      mean_inference_ms: 7.862461637767611
+      mean_raw_obs_processing_ms: 1.9796070935009797
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_02
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09806156158447266
+    StateBufferConnector_ms: 0.010085105895996094
+    ViewRequirementAgentConnector_ms: 0.19309520721435547
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2793.1755082709324
+  episode_reward_mean: 2657.450008073004
+  episode_reward_min: 2521.7245078750752
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2793.1755082709324
+    - 2521.7245078750752
+    policy_a_reward: [504.66523586727334, 431.1936909784795, 312.6599224083261, 485.3373792415112,
+      223.9381794491358, 332.9289400491798, 381.87380817205303, 248.94930265952235,
+      502.5379085290964, 264.58551243743085]
+    policy_p_reward:
+    - 835.3811003262105
+    - 790.849036027787
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 504.66523586727334
+    p: 835.3811003262105
+  policy_reward_mean:
+    a: 368.8669879792008
+    p: 813.1150681769986
+  policy_reward_min:
+    a: 223.9381794491358
+    p: 790.849036027787
+  sampler_perf:
+    mean_action_processing_ms: 0.5168221343582359
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.943669444498332
+    mean_inference_ms: 7.977967140735357
+    mean_raw_obs_processing_ms: 1.962054794517414
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09806156158447266
+      StateBufferConnector_ms: 0.010085105895996094
+      ViewRequirementAgentConnector_ms: 0.19309520721435547
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2793.1755082709324
+    episode_reward_mean: 2657.450008073004
+    episode_reward_min: 2521.7245078750752
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2793.1755082709324
+      - 2521.7245078750752
+      policy_a_reward: [504.66523586727334, 431.1936909784795, 312.6599224083261,
+        485.3373792415112, 223.9381794491358, 332.9289400491798, 381.87380817205303,
+        248.94930265952235, 502.5379085290964, 264.58551243743085]
+      policy_p_reward:
+      - 835.3811003262105
+      - 790.849036027787
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 504.66523586727334
+      p: 835.3811003262105
+    policy_reward_mean:
+      a: 368.8669879792008
+      p: 813.1150681769986
+    policy_reward_min:
+      a: 223.9381794491358
+      p: 790.849036027787
+    sampler_perf:
+      mean_action_processing_ms: 0.5168221343582359
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.943669444498332
+      mean_inference_ms: 7.977967140735357
+      mean_raw_obs_processing_ms: 1.962054794517414
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_03
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.0864267349243164
+    StateBufferConnector_ms: 0.008147954940795898
+    ViewRequirementAgentConnector_ms: 0.19178986549377441
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2869.645405400528
+  episode_reward_mean: 2727.7230707070876
+  episode_reward_min: 2585.800736013647
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2869.645405400528
+    - 2585.800736013647
+    policy_a_reward: [409.43571664706866, 331.08540356181044, 410.0720878287632, 376.2788731120299,
+      418.3556000891441, 246.2074255441364, 258.3860316847505, 316.73858651063887,
+      506.6473159210009, 421.9549361160028]
+    policy_p_reward:
+    - 924.4177241617099
+    - 835.8664402371204
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 506.6473159210009
+    p: 924.4177241617099
+  policy_reward_mean:
+    a: 369.5161977015346
+    p: 880.1420821994152
+  policy_reward_min:
+    a: 246.2074255441364
+    p: 835.8664402371204
+  sampler_perf:
+    mean_action_processing_ms: 0.514777456937147
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.9671909709016786
+    mean_inference_ms: 7.953654761697616
+    mean_raw_obs_processing_ms: 1.953818425327623
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.0864267349243164
+      StateBufferConnector_ms: 0.008147954940795898
+      ViewRequirementAgentConnector_ms: 0.19178986549377441
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2869.645405400528
+    episode_reward_mean: 2727.7230707070876
+    episode_reward_min: 2585.800736013647
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2869.645405400528
+      - 2585.800736013647
+      policy_a_reward: [409.43571664706866, 331.08540356181044, 410.0720878287632,
+        376.2788731120299, 418.3556000891441, 246.2074255441364, 258.3860316847505,
+        316.73858651063887, 506.6473159210009, 421.9549361160028]
+      policy_p_reward:
+      - 924.4177241617099
+      - 835.8664402371204
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 506.6473159210009
+      p: 924.4177241617099
+    policy_reward_mean:
+      a: 369.5161977015346
+      p: 880.1420821994152
+    policy_reward_min:
+      a: 246.2074255441364
+      p: 835.8664402371204
+    sampler_perf:
+      mean_action_processing_ms: 0.514777456937147
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.9671909709016786
+      mean_inference_ms: 7.953654761697616
+      mean_raw_obs_processing_ms: 1.953818425327623
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_04
+Completing! Saving final snapshot...
+
+
+Final snapshot saved! All done.
+seed (final): 63694000
+Not restoring trainer...
+Restoring agents weights...
+Starting with fresh planner weights.
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.08521080017089844
+    StateBufferConnector_ms: 0.009149312973022461
+    ViewRequirementAgentConnector_ms: 0.19478201866149902
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2110.8818790001624
+  episode_reward_mean: 1935.518017620283
+  episode_reward_min: 1760.1541562404038
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 1760.1541562404038
+    - 2110.8818790001624
+    policy_a_reward: [66.11633750233202, 545.8927175385619, 352.87392907178344, 288.40838703944354,
+      335.78675897269443, 354.5625845248987, 353.25159858088597, 247.45399756643477,
+      318.20670253170937, 470.25974978253896]
+    policy_p_reward:
+    - 171.07602611559005
+    - 367.1472460136954
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 545.8927175385619
+    p: 367.1472460136954
+  policy_reward_mean:
+    a: 333.2812763111283
+    p: 269.1116360646427
+  policy_reward_min:
+    a: 66.11633750233202
+    p: 171.07602611559005
+  sampler_perf:
+    mean_action_processing_ms: 0.5350112915039062
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.457026898504017
+    mean_inference_ms: 7.22526409430894
+    mean_raw_obs_processing_ms: 2.1746734421172302
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.08521080017089844
+      StateBufferConnector_ms: 0.009149312973022461
+      ViewRequirementAgentConnector_ms: 0.19478201866149902
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2110.8818790001624
+    episode_reward_mean: 1935.518017620283
+    episode_reward_min: 1760.1541562404038
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 1760.1541562404038
+      - 2110.8818790001624
+      policy_a_reward: [66.11633750233202, 545.8927175385619, 352.87392907178344,
+        288.40838703944354, 335.78675897269443, 354.5625845248987, 353.25159858088597,
+        247.45399756643477, 318.20670253170937, 470.25974978253896]
+      policy_p_reward:
+      - 171.07602611559005
+      - 367.1472460136954
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 545.8927175385619
+      p: 367.1472460136954
+    policy_reward_mean:
+      a: 333.2812763111283
+      p: 269.1116360646427
+    policy_reward_min:
+      a: 66.11633750233202
+      p: 171.07602611559005
+    sampler_perf:
+      mean_action_processing_ms: 0.5350112915039062
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.457026898504017
+      mean_inference_ms: 7.22526409430894
+      mean_raw_obs_processing_ms: 2.1746734421172302
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_00
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.11102557182312012
+    StateBufferConnector_ms: 0.010210275650024414
+    ViewRequirementAgentConnector_ms: 0.2261638641357422
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 1989.7483582412788
+  episode_reward_mean: 1805.0447937952738
+  episode_reward_min: 1620.3412293492688
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 1989.7483582412788
+    - 1620.3412293492688
+    policy_a_reward: [531.2156147866305, 243.85112445034335, 245.59579323410975, 317.67365700326224,
+      492.8565047101545, 226.5626688675424, 9.160068107993823, 508.2353078813725,
+      238.5002615976104, 366.56352911640505]
+    policy_p_reward:
+    - 158.55566405677902
+    - 271.3193937783438
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 531.2156147866305
+    p: 271.3193937783438
+  policy_reward_mean:
+    a: 318.02145297554245
+    p: 214.9375289175614
+  policy_reward_min:
+    a: 9.160068107993823
+    p: 158.55566405677902
+  sampler_perf:
+    mean_action_processing_ms: 0.5547569229171707
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.586341259600995
+    mean_inference_ms: 8.13913369154954
+    mean_raw_obs_processing_ms: 2.2022031046651103
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.11102557182312012
+      StateBufferConnector_ms: 0.010210275650024414
+      ViewRequirementAgentConnector_ms: 0.2261638641357422
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 1989.7483582412788
+    episode_reward_mean: 1805.0447937952738
+    episode_reward_min: 1620.3412293492688
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 1989.7483582412788
+      - 1620.3412293492688
+      policy_a_reward: [531.2156147866305, 243.85112445034335, 245.59579323410975,
+        317.67365700326224, 492.8565047101545, 226.5626688675424, 9.160068107993823,
+        508.2353078813725, 238.5002615976104, 366.56352911640505]
+      policy_p_reward:
+      - 158.55566405677902
+      - 271.3193937783438
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 531.2156147866305
+      p: 271.3193937783438
+    policy_reward_mean:
+      a: 318.02145297554245
+      p: 214.9375289175614
+    policy_reward_min:
+      a: 9.160068107993823
+      p: 158.55566405677902
+    sampler_perf:
+      mean_action_processing_ms: 0.5547569229171707
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.586341259600995
+      mean_inference_ms: 8.13913369154954
+      mean_raw_obs_processing_ms: 2.2022031046651103
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_01
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.10442733764648438
+    StateBufferConnector_ms: 0.009495019912719727
+    ViewRequirementAgentConnector_ms: 0.2189934253692627
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 2294.219754527728
+  episode_reward_mean: 2192.1725127297045
+  episode_reward_min: 2090.125270931681
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 2294.219754527728
+    - 2090.125270931681
+    policy_a_reward: [178.60011120989833, 505.2994327491272, 328.03388123901834, 323.60514575949105,
+      453.3990019925525, 485.9169297792494, 332.22885315368706, 502.62576425319725,
+      261.19834884976984, 313.13334790039534]
+    policy_p_reward:
+    - 505.2821815776425
+    - 195.02202699537372
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 505.2994327491272
+    p: 505.2821815776425
+  policy_reward_mean:
+    a: 368.4040816886386
+    p: 350.1521042865081
+  policy_reward_min:
+    a: 178.60011120989833
+    p: 195.02202699537372
+  sampler_perf:
+    mean_action_processing_ms: 0.5566373338388014
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.622942284692692
+    mean_inference_ms: 8.490183605979395
+    mean_raw_obs_processing_ms: 2.191930195238493
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.10442733764648438
+      StateBufferConnector_ms: 0.009495019912719727
+      ViewRequirementAgentConnector_ms: 0.2189934253692627
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 2294.219754527728
+    episode_reward_mean: 2192.1725127297045
+    episode_reward_min: 2090.125270931681
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 2294.219754527728
+      - 2090.125270931681
+      policy_a_reward: [178.60011120989833, 505.2994327491272, 328.03388123901834,
+        323.60514575949105, 453.3990019925525, 485.9169297792494, 332.22885315368706,
+        502.62576425319725, 261.19834884976984, 313.13334790039534]
+      policy_p_reward:
+      - 505.2821815776425
+      - 195.02202699537372
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 505.2994327491272
+      p: 505.2821815776425
+    policy_reward_mean:
+      a: 368.4040816886386
+      p: 350.1521042865081
+    policy_reward_min:
+      a: 178.60011120989833
+      p: 195.02202699537372
+    sampler_perf:
+      mean_action_processing_ms: 0.5566373338388014
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.622942284692692
+      mean_inference_ms: 8.490183605979395
+      mean_raw_obs_processing_ms: 2.191930195238493
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_02
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.10727643966674805
+    StateBufferConnector_ms: 0.01233220100402832
+    ViewRequirementAgentConnector_ms: 0.23868083953857422
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 1930.045149990949
+  episode_reward_mean: 1794.4424051323963
+  episode_reward_min: 1658.8396602738435
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 1930.045149990949
+    - 1658.8396602738435
+    policy_a_reward: [314.7504105685986, 426.5718934735209, 408.93851967970687, 199.5088042357588,
+      443.72477039228346, 52.344467121465904, 519.8649937344628, 348.44423016846616,
+      238.4272442655466, 252.2001691747982]
+    policy_p_reward:
+    - 136.5507516410801
+    - 247.55855580910347
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 519.8649937344628
+    p: 247.55855580910347
+  policy_reward_mean:
+    a: 320.4775502814608
+    p: 192.05465372509178
+  policy_reward_min:
+    a: 52.344467121465904
+    p: 136.5507516410801
+  sampler_perf:
+    mean_action_processing_ms: 0.5582845669755454
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.508285746462401
+    mean_inference_ms: 8.697051158373146
+    mean_raw_obs_processing_ms: 2.1886665900905746
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.10727643966674805
+      StateBufferConnector_ms: 0.01233220100402832
+      ViewRequirementAgentConnector_ms: 0.23868083953857422
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 1930.045149990949
+    episode_reward_mean: 1794.4424051323963
+    episode_reward_min: 1658.8396602738435
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 1930.045149990949
+      - 1658.8396602738435
+      policy_a_reward: [314.7504105685986, 426.5718934735209, 408.93851967970687,
+        199.5088042357588, 443.72477039228346, 52.344467121465904, 519.8649937344628,
+        348.44423016846616, 238.4272442655466, 252.2001691747982]
+      policy_p_reward:
+      - 136.5507516410801
+      - 247.55855580910347
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 519.8649937344628
+      p: 247.55855580910347
+    policy_reward_mean:
+      a: 320.4775502814608
+      p: 192.05465372509178
+    policy_reward_min:
+      a: 52.344467121465904
+      p: 136.5507516410801
+    sampler_perf:
+      mean_action_processing_ms: 0.5582845669755454
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.508285746462401
+      mean_inference_ms: 8.697051158373146
+      mean_raw_obs_processing_ms: 2.1886665900905746
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_03
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.1024782657623291
+    StateBufferConnector_ms: 0.010341405868530273
+    ViewRequirementAgentConnector_ms: 0.23310184478759766
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 1583.3049697691108
+  episode_reward_mean: 1570.3765480506777
+  episode_reward_min: 1557.4481263322446
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 1583.3049697691108
+    - 1557.4481263322446
+    policy_a_reward: [313.6219312675918, 312.4691497531506, 201.85330968600624, 444.9280606757846,
+      197.18464785173444, 267.0707585856392, 439.1853438451406, 43.326071961087216,
+      321.4291892321919, 311.0984838787736]
+    policy_p_reward:
+    - 113.2478705348433
+    - 175.33827882941003
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 444.9280606757846
+    p: 175.33827882941003
+  policy_reward_mean:
+    a: 285.21669467371004
+    p: 144.29307468212667
+  policy_reward_min:
+    a: 43.326071961087216
+    p: 113.2478705348433
+  sampler_perf:
+    mean_action_processing_ms: 0.560227035284519
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.435287385595078
+    mean_inference_ms: 8.942760786310476
+    mean_raw_obs_processing_ms: 2.184266521662819
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.1024782657623291
+      StateBufferConnector_ms: 0.010341405868530273
+      ViewRequirementAgentConnector_ms: 0.23310184478759766
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 1583.3049697691108
+    episode_reward_mean: 1570.3765480506777
+    episode_reward_min: 1557.4481263322446
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 1583.3049697691108
+      - 1557.4481263322446
+      policy_a_reward: [313.6219312675918, 312.4691497531506, 201.85330968600624,
+        444.9280606757846, 197.18464785173444, 267.0707585856392, 439.1853438451406,
+        43.326071961087216, 321.4291892321919, 311.0984838787736]
+      policy_p_reward:
+      - 113.2478705348433
+      - 175.33827882941003
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 444.9280606757846
+      p: 175.33827882941003
+    policy_reward_mean:
+      a: 285.21669467371004
+      p: 144.29307468212667
+    policy_reward_min:
+      a: 43.326071961087216
+      p: 113.2478705348433
+    sampler_perf:
+      mean_action_processing_ms: 0.560227035284519
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.435287385595078
+      mean_inference_ms: 8.942760786310476
+      mean_raw_obs_processing_ms: 2.184266521662819
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_04
+Completing! Saving final snapshot...
+
+
+Final snapshot saved! All done.
+seed (final): 25054000
+Not restoring trainer...
+Restoring agents weights...
+seed (final): 25770000
+seed (final): 25813000
+seed (final): 25880000
+Not restoring trainer...
+Restoring agents weights...
+seed (final): 28377000
+Not restoring trainer...
+Restoring agents weights...
+Starting with fresh planner weights.
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.08977055549621582
+    StateBufferConnector_ms: 0.00826120376586914
+    ViewRequirementAgentConnector_ms: 0.18879175186157227
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 497.09749217004196
+  episode_reward_mean: 476.3572791387563
+  episode_reward_min: 455.61706610747075
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 497.09749217004196
+    - 455.61706610747075
+    policy_a_reward: [67.6955730476627, 69.69295316279029, 110.93018262704395, 108.48345826499961,
+      61.5575973275275, 100.49818737977232, 71.20233346808381, 62.09470293707693,
+      105.8053695732105, 50.745786583192455]
+    policy_p_reward:
+    - 78.73772774001935
+    - 65.27068616613406
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 110.93018262704395
+    p: 78.73772774001935
+  policy_reward_mean:
+    a: 80.87061443713601
+    p: 72.0042069530767
+  policy_reward_min:
+    a: 50.745786583192455
+    p: 65.27068616613406
+  sampler_perf:
+    mean_action_processing_ms: 0.5114226046198618
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.851324260353804
+    mean_inference_ms: 7.986980046102862
+    mean_raw_obs_processing_ms: 2.0536391321056615
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.08977055549621582
+      StateBufferConnector_ms: 0.00826120376586914
+      ViewRequirementAgentConnector_ms: 0.18879175186157227
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 497.09749217004196
+    episode_reward_mean: 476.3572791387563
+    episode_reward_min: 455.61706610747075
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 497.09749217004196
+      - 455.61706610747075
+      policy_a_reward: [67.6955730476627, 69.69295316279029, 110.93018262704395, 108.48345826499961,
+        61.5575973275275, 100.49818737977232, 71.20233346808381, 62.09470293707693,
+        105.8053695732105, 50.745786583192455]
+      policy_p_reward:
+      - 78.73772774001935
+      - 65.27068616613406
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 110.93018262704395
+      p: 78.73772774001935
+    policy_reward_mean:
+      a: 80.87061443713601
+      p: 72.0042069530767
+    policy_reward_min:
+      a: 50.745786583192455
+      p: 65.27068616613406
+    sampler_perf:
+      mean_action_processing_ms: 0.5114226046198618
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.851324260353804
+      mean_inference_ms: 7.986980046102862
+      mean_raw_obs_processing_ms: 2.0536391321056615
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_00
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.11661052703857422
+    StateBufferConnector_ms: 0.009888410568237305
+    ViewRequirementAgentConnector_ms: 0.25307536125183105
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 483.4854135091016
+  episode_reward_mean: 442.9572321810384
+  episode_reward_min: 402.42905085297525
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 402.42905085297525
+    - 483.4854135091016
+    policy_a_reward: [65.6256900221546, 72.16686700216655, 91.18189919126333, 56.05927680674056,
+      89.72798588307961, 86.17204986775343, 48.463571529436436, 96.62861244363908,
+      65.70280259748239, 107.85984979759718]
+    policy_p_reward:
+    - 27.667331947570453
+    - 78.65852727319415
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 107.85984979759718
+    p: 78.65852727319415
+  policy_reward_mean:
+    a: 77.95886051413132
+    p: 53.16292961038231
+  policy_reward_min:
+    a: 48.463571529436436
+    p: 27.667331947570453
+  sampler_perf:
+    mean_action_processing_ms: 0.5216393675599303
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.9509000120820343
+    mean_inference_ms: 8.633151992813096
+    mean_raw_obs_processing_ms: 2.0270104651208167
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.11661052703857422
+      StateBufferConnector_ms: 0.009888410568237305
+      ViewRequirementAgentConnector_ms: 0.25307536125183105
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 483.4854135091016
+    episode_reward_mean: 442.9572321810384
+    episode_reward_min: 402.42905085297525
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 402.42905085297525
+      - 483.4854135091016
+      policy_a_reward: [65.6256900221546, 72.16686700216655, 91.18189919126333, 56.05927680674056,
+        89.72798588307961, 86.17204986775343, 48.463571529436436, 96.62861244363908,
+        65.70280259748239, 107.85984979759718]
+      policy_p_reward:
+      - 27.667331947570453
+      - 78.65852727319415
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 107.85984979759718
+      p: 78.65852727319415
+    policy_reward_mean:
+      a: 77.95886051413132
+      p: 53.16292961038231
+    policy_reward_min:
+      a: 48.463571529436436
+      p: 27.667331947570453
+    sampler_perf:
+      mean_action_processing_ms: 0.5216393675599303
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.9509000120820343
+      mean_inference_ms: 8.633151992813096
+      mean_raw_obs_processing_ms: 2.0270104651208167
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_01
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.11514425277709961
+    StateBufferConnector_ms: 0.008910894393920898
+    ViewRequirementAgentConnector_ms: 0.19760727882385254
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 631.3148598156104
+  episode_reward_mean: 541.8612303852187
+  episode_reward_min: 452.40760095482716
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 631.3148598156104
+    - 452.40760095482716
+    policy_a_reward: [77.02592953838732, 126.04493073915282, 134.32576051291375, 74.81431352717614,
+      114.99021644282882, 85.2776495964639, 48.22938440914934, 106.20111570966839,
+      60.92865230446809, 101.64128075960562]
+    policy_p_reward:
+    - 104.11370905514919
+    - 50.12951817547058
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 134.32576051291375
+    p: 104.11370905514919
+  policy_reward_mean:
+    a: 92.94792335398141
+    p: 77.12161361530988
+  policy_reward_min:
+    a: 48.22938440914934
+    p: 50.12951817547058
+  sampler_perf:
+    mean_action_processing_ms: 0.5199392980769981
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.9953322985583664
+    mean_inference_ms: 8.669870682830098
+    mean_raw_obs_processing_ms: 1.9763348342417717
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.11514425277709961
+      StateBufferConnector_ms: 0.008910894393920898
+      ViewRequirementAgentConnector_ms: 0.19760727882385254
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 631.3148598156104
+    episode_reward_mean: 541.8612303852187
+    episode_reward_min: 452.40760095482716
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 631.3148598156104
+      - 452.40760095482716
+      policy_a_reward: [77.02592953838732, 126.04493073915282, 134.32576051291375,
+        74.81431352717614, 114.99021644282882, 85.2776495964639, 48.22938440914934,
+        106.20111570966839, 60.92865230446809, 101.64128075960562]
+      policy_p_reward:
+      - 104.11370905514919
+      - 50.12951817547058
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 134.32576051291375
+      p: 104.11370905514919
+    policy_reward_mean:
+      a: 92.94792335398141
+      p: 77.12161361530988
+    policy_reward_min:
+      a: 48.22938440914934
+      p: 50.12951817547058
+    sampler_perf:
+      mean_action_processing_ms: 0.5199392980769981
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.9953322985583664
+      mean_inference_ms: 8.669870682830098
+      mean_raw_obs_processing_ms: 1.9763348342417717
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_02
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09983181953430176
+    StateBufferConnector_ms: 0.008928775787353516
+    ViewRequirementAgentConnector_ms: 0.1932680606842041
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 547.4261663874215
+  episode_reward_mean: 533.496161573085
+  episode_reward_min: 519.5661567587485
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 547.4261663874215
+    - 519.5661567587485
+    policy_a_reward: [99.27660825897972, 53.73098270482812, 62.900518213606475, 93.55501560695618,
+      77.60680866835133, 115.0797337982341, 109.70161544286594, 94.81210141387928,
+      64.12745113000467, 50.23876849285043]
+    policy_p_reward:
+    - 160.35623293469897
+    - 85.60648648091323
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 115.0797337982341
+    p: 160.35623293469897
+  policy_reward_mean:
+    a: 82.10296037305564
+    p: 122.98135970780609
+  policy_reward_min:
+    a: 50.23876849285043
+    p: 85.60648648091323
+  sampler_perf:
+    mean_action_processing_ms: 0.5176095948226448
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.910645432975041
+    mean_inference_ms: 8.764009604389699
+    mean_raw_obs_processing_ms: 1.949609606817685
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09983181953430176
+      StateBufferConnector_ms: 0.008928775787353516
+      ViewRequirementAgentConnector_ms: 0.1932680606842041
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 547.4261663874215
+    episode_reward_mean: 533.496161573085
+    episode_reward_min: 519.5661567587485
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 547.4261663874215
+      - 519.5661567587485
+      policy_a_reward: [99.27660825897972, 53.73098270482812, 62.900518213606475,
+        93.55501560695618, 77.60680866835133, 115.0797337982341, 109.70161544286594,
+        94.81210141387928, 64.12745113000467, 50.23876849285043]
+      policy_p_reward:
+      - 160.35623293469897
+      - 85.60648648091323
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 115.0797337982341
+      p: 160.35623293469897
+    policy_reward_mean:
+      a: 82.10296037305564
+      p: 122.98135970780609
+    policy_reward_min:
+      a: 50.23876849285043
+      p: 85.60648648091323
+    sampler_perf:
+      mean_action_processing_ms: 0.5176095948226448
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.910645432975041
+      mean_inference_ms: 8.764009604389699
+      mean_raw_obs_processing_ms: 1.949609606817685
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_03
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09642839431762695
+    StateBufferConnector_ms: 0.008511543273925781
+    ViewRequirementAgentConnector_ms: 0.19379258155822754
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 540.3292123773036
+  episode_reward_mean: 449.0726968541385
+  episode_reward_min: 357.8161813309734
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 540.3292123773036
+    - 357.8161813309734
+    policy_a_reward: [90.9204095920573, 126.54386837463414, 120.95869881756146, 72.38470093792935,
+      50.632703656375554, 95.07566420105663, 69.56461855606531, 78.55341484174868,
+      65.43892621778816, 43.04512706512073]
+    policy_p_reward:
+    - 78.88883099874731
+    - 6.138430449194917
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 126.54386837463414
+    p: 78.88883099874731
+  policy_reward_mean:
+    a: 81.31181322603372
+    p: 42.51363072397111
+  policy_reward_min:
+    a: 43.04512706512073
+    p: 6.138430449194917
+  sampler_perf:
+    mean_action_processing_ms: 0.5165470547315741
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.9912792550521297
+    mean_inference_ms: 8.782849412877672
+    mean_raw_obs_processing_ms: 1.9450997982154794
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09642839431762695
+      StateBufferConnector_ms: 0.008511543273925781
+      ViewRequirementAgentConnector_ms: 0.19379258155822754
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 540.3292123773036
+    episode_reward_mean: 449.0726968541385
+    episode_reward_min: 357.8161813309734
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 540.3292123773036
+      - 357.8161813309734
+      policy_a_reward: [90.9204095920573, 126.54386837463414, 120.95869881756146,
+        72.38470093792935, 50.632703656375554, 95.07566420105663, 69.56461855606531,
+        78.55341484174868, 65.43892621778816, 43.04512706512073]
+      policy_p_reward:
+      - 78.88883099874731
+      - 6.138430449194917
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 126.54386837463414
+      p: 78.88883099874731
+    policy_reward_mean:
+      a: 81.31181322603372
+      p: 42.51363072397111
+    policy_reward_min:
+      a: 43.04512706512073
+      p: 6.138430449194917
+    sampler_perf:
+      mean_action_processing_ms: 0.5165470547315741
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 3.9912792550521297
+      mean_inference_ms: 8.782849412877672
+      mean_raw_obs_processing_ms: 1.9450997982154794
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/gml1/dense_logs/logs_04
+Completing! Saving final snapshot...
+
+
+Final snapshot saved! All done.
+seed (final): 32786000
+Not restoring trainer...
+Restoring agents weights...
+Starting with fresh planner weights.
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.10231733322143555
+    StateBufferConnector_ms: 0.008988380432128906
+    ViewRequirementAgentConnector_ms: 0.2126753330230713
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 509.7149090142009
+  episode_reward_mean: 478.90611142658554
+  episode_reward_min: 448.0973138389702
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 509.7149090142009
+    - 448.0973138389702
+    policy_a_reward: [63.3394784558634, 92.43518632236623, 100.08739762005531, 63.48255431909094,
+      61.87810007405301, 86.19867921879548, 49.53600294110996, 51.83113391158027,
+      79.93867421570678, 85.47330433831812]
+    policy_p_reward:
+    - 128.49219222277293
+    - 95.11951921345802
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 100.08739762005531
+    p: 128.49219222277293
+  policy_reward_mean:
+    a: 73.42005114169395
+    p: 111.80585571811548
+  policy_reward_min:
+    a: 49.53600294110996
+    p: 95.11951921345802
+  sampler_perf:
+    mean_action_processing_ms: 0.5224455378488628
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.027695474986307
+    mean_inference_ms: 6.423518091380715
+    mean_raw_obs_processing_ms: 2.0162949780980033
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.10231733322143555
+      StateBufferConnector_ms: 0.008988380432128906
+      ViewRequirementAgentConnector_ms: 0.2126753330230713
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 509.7149090142009
+    episode_reward_mean: 478.90611142658554
+    episode_reward_min: 448.0973138389702
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 509.7149090142009
+      - 448.0973138389702
+      policy_a_reward: [63.3394784558634, 92.43518632236623, 100.08739762005531, 63.48255431909094,
+        61.87810007405301, 86.19867921879548, 49.53600294110996, 51.83113391158027,
+        79.93867421570678, 85.47330433831812]
+      policy_p_reward:
+      - 128.49219222277293
+      - 95.11951921345802
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 100.08739762005531
+      p: 128.49219222277293
+    policy_reward_mean:
+      a: 73.42005114169395
+      p: 111.80585571811548
+    policy_reward_min:
+      a: 49.53600294110996
+      p: 95.11951921345802
+    sampler_perf:
+      mean_action_processing_ms: 0.5224455378488628
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.027695474986307
+      mean_inference_ms: 6.423518091380715
+      mean_raw_obs_processing_ms: 2.0162949780980033
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/1/gml/dense_logs/logs_00
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09629130363464355
+    StateBufferConnector_ms: 0.009828805923461914
+    ViewRequirementAgentConnector_ms: 0.1915276050567627
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 632.9180736530088
+  episode_reward_mean: 568.8862994254744
+  episode_reward_min: 504.8545251979398
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 632.9180736530088
+    - 504.8545251979398
+    policy_a_reward: [111.88162029352362, 83.59283830286809, 60.10410379937237, 68.11175814266467,
+      108.74772321090562, 100.25975142978135, 83.99239956158303, 50.12748655519858,
+      56.2234518040905, 95.42984166303444]
+    policy_p_reward:
+    - 200.4800299036785
+    - 118.8215941842546
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 111.88162029352362
+    p: 200.4800299036785
+  policy_reward_mean:
+    a: 81.84709747630222
+    p: 159.65081204396654
+  policy_reward_min:
+    a: 50.12748655519858
+    p: 118.8215941842546
+  sampler_perf:
+    mean_action_processing_ms: 0.5380685751016562
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.132670956058102
+    mean_inference_ms: 7.513321124828541
+    mean_raw_obs_processing_ms: 2.0321887451690155
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09629130363464355
+      StateBufferConnector_ms: 0.009828805923461914
+      ViewRequirementAgentConnector_ms: 0.1915276050567627
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 632.9180736530088
+    episode_reward_mean: 568.8862994254744
+    episode_reward_min: 504.8545251979398
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 632.9180736530088
+      - 504.8545251979398
+      policy_a_reward: [111.88162029352362, 83.59283830286809, 60.10410379937237,
+        68.11175814266467, 108.74772321090562, 100.25975142978135, 83.99239956158303,
+        50.12748655519858, 56.2234518040905, 95.42984166303444]
+      policy_p_reward:
+      - 200.4800299036785
+      - 118.8215941842546
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 111.88162029352362
+      p: 200.4800299036785
+    policy_reward_mean:
+      a: 81.84709747630222
+      p: 159.65081204396654
+    policy_reward_min:
+      a: 50.12748655519858
+      p: 118.8215941842546
+    sampler_perf:
+      mean_action_processing_ms: 0.5380685751016562
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.132670956058102
+      mean_inference_ms: 7.513321124828541
+      mean_raw_obs_processing_ms: 2.0321887451690155
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/1/gml/dense_logs/logs_01
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.11988282203674316
+    StateBufferConnector_ms: 0.009292364120483398
+    ViewRequirementAgentConnector_ms: 0.198441743850708
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 520.051198289066
+  episode_reward_mean: 514.2763551530446
+  episode_reward_min: 508.5015120170233
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 508.5015120170233
+    - 520.051198289066
+    policy_a_reward: [93.36011355777762, 82.09004379973136, 54.30395746560266, 93.69996557762836,
+      49.624053719006646, 67.6438236995728, 82.67694211573342, 51.045979770857, 109.6551067817164,
+      84.6706325732455]
+    policy_p_reward:
+    - 135.4233778972774
+    - 124.35871334793646
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 109.6551067817164
+    p: 135.4233778972774
+  policy_reward_mean:
+    a: 76.87706190608718
+    p: 129.89104562260692
+  policy_reward_min:
+    a: 49.624053719006646
+    p: 124.35871334793646
+  sampler_perf:
+    mean_action_processing_ms: 0.5369310296431611
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.152183767797786
+    mean_inference_ms: 7.8449652720736625
+    mean_raw_obs_processing_ms: 2.020484681609152
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.11988282203674316
+      StateBufferConnector_ms: 0.009292364120483398
+      ViewRequirementAgentConnector_ms: 0.198441743850708
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 520.051198289066
+    episode_reward_mean: 514.2763551530446
+    episode_reward_min: 508.5015120170233
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 508.5015120170233
+      - 520.051198289066
+      policy_a_reward: [93.36011355777762, 82.09004379973136, 54.30395746560266, 93.69996557762836,
+        49.624053719006646, 67.6438236995728, 82.67694211573342, 51.045979770857,
+        109.6551067817164, 84.6706325732455]
+      policy_p_reward:
+      - 135.4233778972774
+      - 124.35871334793646
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 109.6551067817164
+      p: 135.4233778972774
+    policy_reward_mean:
+      a: 76.87706190608718
+      p: 129.89104562260692
+    policy_reward_min:
+      a: 49.624053719006646
+      p: 124.35871334793646
+    sampler_perf:
+      mean_action_processing_ms: 0.5369310296431611
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.152183767797786
+      mean_inference_ms: 7.8449652720736625
+      mean_raw_obs_processing_ms: 2.020484681609152
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/1/gml/dense_logs/logs_02
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.10915398597717285
+    StateBufferConnector_ms: 0.01035928726196289
+    ViewRequirementAgentConnector_ms: 0.20911693572998047
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 515.2050752279677
+  episode_reward_mean: 508.25749280701126
+  episode_reward_min: 501.30991038605487
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 515.2050752279677
+    - 501.30991038605487
+    policy_a_reward: [49.526911164876324, 91.84613627975932, 73.74766961204969, 95.76748161072284,
+      60.98133506075066, 94.83019982181274, 80.0684129992322, 53.70492128009039, 80.93613692537144,
+      55.387042118806946]
+    policy_p_reward:
+    - 143.33554149980586
+    - 136.38319724073833
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 95.76748161072284
+    p: 143.33554149980586
+  policy_reward_mean:
+    a: 73.67962468734726
+    p: 139.85936937027208
+  policy_reward_min:
+    a: 49.526911164876324
+    p: 136.38319724073833
+  sampler_perf:
+    mean_action_processing_ms: 0.5387711799007723
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.083577660785086
+    mean_inference_ms: 8.036237308706182
+    mean_raw_obs_processing_ms: 2.0345526299197814
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.10915398597717285
+      StateBufferConnector_ms: 0.01035928726196289
+      ViewRequirementAgentConnector_ms: 0.20911693572998047
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 515.2050752279677
+    episode_reward_mean: 508.25749280701126
+    episode_reward_min: 501.30991038605487
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 515.2050752279677
+      - 501.30991038605487
+      policy_a_reward: [49.526911164876324, 91.84613627975932, 73.74766961204969,
+        95.76748161072284, 60.98133506075066, 94.83019982181274, 80.0684129992322,
+        53.70492128009039, 80.93613692537144, 55.387042118806946]
+      policy_p_reward:
+      - 143.33554149980586
+      - 136.38319724073833
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 95.76748161072284
+      p: 143.33554149980586
+    policy_reward_mean:
+      a: 73.67962468734726
+      p: 139.85936937027208
+    policy_reward_min:
+      a: 49.526911164876324
+      p: 136.38319724073833
+    sampler_perf:
+      mean_action_processing_ms: 0.5387711799007723
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.083577660785086
+      mean_inference_ms: 8.036237308706182
+      mean_raw_obs_processing_ms: 2.0345526299197814
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/1/gml/dense_logs/logs_03
+evaluation:
+  connector_metrics:
+    ObsPreprocessorConnector_ms: 0.09059906005859375
+    StateBufferConnector_ms: 0.009137392044067383
+    ViewRequirementAgentConnector_ms: 0.20921826362609863
+  custom_metrics: {}
+  episode_len_mean: 500.0
+  episode_media: {}
+  episode_reward_max: 527.4932859494734
+  episode_reward_mean: 515.6164953377547
+  episode_reward_min: 503.73970472603594
+  episodes_this_iter: 2
+  hist_stats:
+    episode_lengths:
+    - 500
+    - 500
+    episode_reward:
+    - 503.73970472603594
+    - 527.4932859494734
+    policy_a_reward: [94.62824978391336, 50.265138761917946, 54.18528812884359, 80.13937215482675,
+      103.71932554323557, 108.71326946618362, 81.25336797972237, 51.481410391082825,
+      108.49304466245347, 41.19139339989061]
+    policy_p_reward:
+    - 120.80233035329826
+    - 136.3608000501465
+  num_agent_steps_sampled_this_iter: 6000
+  num_env_steps_sampled_this_iter: 1000
+  num_faulty_episodes: 0
+  policy_reward_max:
+    a: 108.71326946618362
+    p: 136.3608000501465
+  policy_reward_mean:
+    a: 77.40698602720701
+    p: 128.58156520172238
+  policy_reward_min:
+    a: 41.19139339989061
+    p: 120.80233035329826
+  sampler_perf:
+    mean_action_processing_ms: 0.5429818695995723
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.143286971557813
+    mean_inference_ms: 8.162086651545437
+    mean_raw_obs_processing_ms: 2.0494627885845174
+  sampler_results:
+    connector_metrics:
+      ObsPreprocessorConnector_ms: 0.09059906005859375
+      StateBufferConnector_ms: 0.009137392044067383
+      ViewRequirementAgentConnector_ms: 0.20921826362609863
+    custom_metrics: {}
+    episode_len_mean: 500.0
+    episode_media: {}
+    episode_reward_max: 527.4932859494734
+    episode_reward_mean: 515.6164953377547
+    episode_reward_min: 503.73970472603594
+    episodes_this_iter: 2
+    hist_stats:
+      episode_lengths:
+      - 500
+      - 500
+      episode_reward:
+      - 503.73970472603594
+      - 527.4932859494734
+      policy_a_reward: [94.62824978391336, 50.265138761917946, 54.18528812884359,
+        80.13937215482675, 103.71932554323557, 108.71326946618362, 81.25336797972237,
+        51.481410391082825, 108.49304466245347, 41.19139339989061]
+      policy_p_reward:
+      - 120.80233035329826
+      - 136.3608000501465
+    num_faulty_episodes: 0
+    policy_reward_max:
+      a: 108.71326946618362
+      p: 136.3608000501465
+    policy_reward_mean:
+      a: 77.40698602720701
+      p: 128.58156520172238
+    policy_reward_min:
+      a: 41.19139339989061
+      p: 120.80233035329826
+    sampler_perf:
+      mean_action_processing_ms: 0.5429818695995723
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 4.143286971557813
+      mean_inference_ms: 8.162086651545437
+      mean_raw_obs_processing_ms: 2.0494627885845174
+  timesteps_this_iter: 1000
+
+>> Wrote metrix to: rllib_test/test/1/gml/dense_logs/logs_04
+Completing! Saving final snapshot...
+
+
+Final snapshot saved! All done.

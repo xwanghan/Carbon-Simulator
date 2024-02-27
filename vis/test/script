@@ -1,0 +1,12 @@
+python3 ai_carbon_new_1/rllib_test/test_script.py --run_dir ai_carbon_new/rllib_test/test/d1
+
+python3 rllib_test/test_script.py --run_dir rllib_test/test/flat
+
+python3 rllib_test/test_script.py --run_dir rllib_test/test/decreasing
+
+python3 rllib_test/test_script.py --run_dir rllib_test/test/convex
+
+python3 rllib_test/test_script.py --run_dir rllib_test/test/marl2
+
+
+
