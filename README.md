@@ -17,7 +17,7 @@ python3 rllib/training_script.py --run_dir rllib/exp/pl1
 ```
 
 # Our experiment results
-<img src="bar_chart.png" alt="Social_welfare" width="500" style="display:block; margin:auto;">
+<img src="bar_chart.png" alt="Social_welfare" width="500">
 
 # Visualisation
 We also implement visualisation of our simulator, with saved logs in test episodes, please follow the [guide](vis/Dashboard.ipynb).
