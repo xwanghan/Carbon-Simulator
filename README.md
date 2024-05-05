@@ -20,7 +20,7 @@ python3 rllib/training_script.py --run_dir rllib/exp/pl1
 <img src="bar_chart.png" alt="Social_welfare" width="500">
 
 # Visualisation
-We also implement visualisation of our simulator, with saved logs in test episodes, please follow the [guide](vis/Dashboard.ipynb).
+We also implement visualisation of our simulator with saved logs in test episodes, please follow the [guide](vis/Dashboard.ipynb).
 
 ![Visualisation_dash](Dash.png)
 
