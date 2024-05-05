@@ -5,6 +5,10 @@
 Our demo video is available at [Google drive](https://drive.google.com/file/d/1pBG51rN_bRdOB7Cv-qawPRo7pOw6aNSO/view?usp=sharing)
 
 # How to train
+Install dependencies:
+```
+pip install -r requirements.txt
+```
 
 To start training low-level Enterprise agents with defuat configuration:
 ```
