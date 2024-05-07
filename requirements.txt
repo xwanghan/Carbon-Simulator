@@ -1,0 +1,11 @@
+gymnasium==0.29.1
+lz4==4.3.2
+matplotlib==3.7.4
+numpy==1.24.4
+pandas==2.0.3
+pycryptodome==3.20.0
+PyYAML==6.0.1
+PyYAML==6.0.1
+ray==2.9.2
+scipy==1.13.0
+seaborn==0.13.2
